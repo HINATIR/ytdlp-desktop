@@ -31,6 +31,8 @@ Partial Class Form2
         Me.TextBox5 = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.CheckBox2 = New System.Windows.Forms.CheckBox()
+        Me.CheckBox1 = New System.Windows.Forms.CheckBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.LinkLabel1 = New System.Windows.Forms.LinkLabel()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
@@ -39,9 +41,6 @@ Partial Class Form2
         Me.Label10 = New System.Windows.Forms.Label()
         Me.TextBox7 = New System.Windows.Forms.TextBox()
         Me.TextBox6 = New System.Windows.Forms.TextBox()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
-        Me.Label9 = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
@@ -59,11 +58,18 @@ Partial Class Form2
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Label6 = New System.Windows.Forms.Label()
+        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Label9 = New System.Windows.Forms.Label()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.TabPage3 = New System.Windows.Forms.TabPage()
+        Me.CheckBox3 = New System.Windows.Forms.CheckBox()
+        Me.ComboBox4 = New System.Windows.Forms.ComboBox()
+        Me.Label14 = New System.Windows.Forms.Label()
         Me.TabPage2.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.GroupBox1.SuspendLayout()
         Me.TabControl1.SuspendLayout()
+        Me.TabPage3.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabPage2
@@ -77,7 +83,7 @@ Partial Class Form2
         Me.TabPage2.Location = New System.Drawing.Point(4, 22)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(789, 243)
+        Me.TabPage2.Size = New System.Drawing.Size(789, 237)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "画質の変数を探る"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -141,12 +147,11 @@ Partial Class Form2
         '
         'TabPage1
         '
+        Me.TabPage1.Controls.Add(Me.CheckBox2)
+        Me.TabPage1.Controls.Add(Me.CheckBox1)
         Me.TabPage1.Controls.Add(Me.Label13)
         Me.TabPage1.Controls.Add(Me.LinkLabel1)
         Me.TabPage1.Controls.Add(Me.GroupBox1)
-        Me.TabPage1.Controls.Add(Me.Button8)
-        Me.TabPage1.Controls.Add(Me.ComboBox3)
-        Me.TabPage1.Controls.Add(Me.Label9)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.Label7)
         Me.TabPage1.Controls.Add(Me.TextBox1)
@@ -167,10 +172,32 @@ Partial Class Form2
         Me.TabPage1.Location = New System.Drawing.Point(4, 22)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(789, 243)
+        Me.TabPage1.Size = New System.Drawing.Size(789, 237)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "メイン"
         Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'CheckBox2
+        '
+        Me.CheckBox2.AutoSize = True
+        Me.CheckBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CheckBox2.Location = New System.Drawing.Point(231, 183)
+        Me.CheckBox2.Name = "CheckBox2"
+        Me.CheckBox2.Size = New System.Drawing.Size(147, 16)
+        Me.CheckBox2.TabIndex = 29
+        Me.CheckBox2.Text = "ダウンロード時にURLを開く"
+        Me.CheckBox2.UseVisualStyleBackColor = True
+        '
+        'CheckBox1
+        '
+        Me.CheckBox1.AutoSize = True
+        Me.CheckBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CheckBox1.Location = New System.Drawing.Point(231, 157)
+        Me.CheckBox1.Name = "CheckBox1"
+        Me.CheckBox1.Size = New System.Drawing.Size(163, 16)
+        Me.CheckBox1.TabIndex = 28
+        Me.CheckBox1.Text = "クッキーを使用してダウンロード"
+        Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Label13
         '
@@ -179,7 +206,7 @@ Partial Class Form2
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(25, 12)
         Me.Label13.TabIndex = 24
-        Me.Label13.Text = "v1.1"
+        Me.Label13.Text = "v1.2"
         '
         'LinkLabel1
         '
@@ -249,36 +276,6 @@ Partial Class Form2
         Me.TextBox6.Size = New System.Drawing.Size(57, 19)
         Me.TextBox6.TabIndex = 27
         '
-        'Button8
-        '
-        Me.Button8.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.Button8.Location = New System.Drawing.Point(344, 115)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(237, 23)
-        Me.Button8.TabIndex = 25
-        Me.Button8.Text = "規制された動画をダウンロードする"
-        Me.Button8.UseVisualStyleBackColor = True
-        '
-        'ComboBox3
-        '
-        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Chrome", "Edge", "Firefox", "Safari", "Vivaldi", "Opera", "Brave", "Chromium"})
-        Me.ComboBox3.Location = New System.Drawing.Point(587, 185)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(193, 20)
-        Me.ComboBox3.TabIndex = 24
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(625, 163)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(133, 12)
-        Me.Label9.TabIndex = 23
-        Me.Label9.Text = "標準ブラウザ(規制対策用)"
-        '
         'Label1
         '
         Me.Label1.AutoSize = True
@@ -336,7 +333,7 @@ Partial Class Form2
         Me.Button2.FlatStyle = System.Windows.Forms.FlatStyle.Popup
         Me.Button2.Location = New System.Drawing.Point(8, 115)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(330, 23)
+        Me.Button2.Size = New System.Drawing.Size(573, 23)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "ダウンロードする"
         Me.Button2.UseVisualStyleBackColor = True
@@ -372,7 +369,7 @@ Partial Class Form2
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(151, 93)
+        Me.Label4.Location = New System.Drawing.Point(31, 93)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(287, 12)
         Me.Label4.TabIndex = 9
@@ -438,27 +435,94 @@ Partial Class Form2
         Me.Label6.Size = New System.Drawing.Size(0, 12)
         Me.Label6.TabIndex = 13
         '
+        'ComboBox3
+        '
+        Me.ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox3.FormattingEnabled = True
+        Me.ComboBox3.Items.AddRange(New Object() {"Chrome", "Edge", "Firefox", "Safari", "Vivaldi", "Opera", "Brave", "Chromium"})
+        Me.ComboBox3.Location = New System.Drawing.Point(8, 109)
+        Me.ComboBox3.Name = "ComboBox3"
+        Me.ComboBox3.Size = New System.Drawing.Size(192, 20)
+        Me.ComboBox3.TabIndex = 24
+        '
+        'Label9
+        '
+        Me.Label9.AutoSize = True
+        Me.Label9.Location = New System.Drawing.Point(23, 83)
+        Me.Label9.Name = "Label9"
+        Me.Label9.Size = New System.Drawing.Size(120, 12)
+        Me.Label9.TabIndex = 23
+        Me.Label9.Text = "標準ブラウザ(クッキー用)"
+        '
         'TabControl1
         '
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage2)
+        Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Cursor = System.Windows.Forms.Cursors.Default
         Me.TabControl1.Location = New System.Drawing.Point(0, -3)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(797, 269)
+        Me.TabControl1.Size = New System.Drawing.Size(797, 263)
         Me.TabControl1.TabIndex = 23
+        '
+        'TabPage3
+        '
+        Me.TabPage3.Controls.Add(Me.CheckBox3)
+        Me.TabPage3.Controls.Add(Me.ComboBox4)
+        Me.TabPage3.Controls.Add(Me.Label9)
+        Me.TabPage3.Controls.Add(Me.ComboBox3)
+        Me.TabPage3.Controls.Add(Me.Label14)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 22)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage3.Size = New System.Drawing.Size(789, 237)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "設定"
+        Me.TabPage3.UseVisualStyleBackColor = True
+        '
+        'CheckBox3
+        '
+        Me.CheckBox3.AutoSize = True
+        Me.CheckBox3.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.CheckBox3.Location = New System.Drawing.Point(8, 152)
+        Me.CheckBox3.Name = "CheckBox3"
+        Me.CheckBox3.Size = New System.Drawing.Size(167, 16)
+        Me.CheckBox3.TabIndex = 26
+        Me.CheckBox3.Text = "ダウンロード時にcmdタブを隠す"
+        Me.CheckBox3.UseVisualStyleBackColor = True
+        '
+        'ComboBox4
+        '
+        Me.ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.ComboBox4.FlatStyle = System.Windows.Forms.FlatStyle.Popup
+        Me.ComboBox4.FormattingEnabled = True
+        Me.ComboBox4.Items.AddRange(New Object() {"日本語"})
+        Me.ComboBox4.Location = New System.Drawing.Point(8, 44)
+        Me.ComboBox4.Name = "ComboBox4"
+        Me.ComboBox4.Size = New System.Drawing.Size(192, 20)
+        Me.ComboBox4.TabIndex = 25
+        '
+        'Label14
+        '
+        Me.Label14.AutoSize = True
+        Me.Label14.Location = New System.Drawing.Point(23, 18)
+        Me.Label14.Name = "Label14"
+        Me.Label14.Size = New System.Drawing.Size(29, 12)
+        Me.Label14.TabIndex = 24
+        Me.Label14.Text = "言語"
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(799, 268)
+        Me.ClientSize = New System.Drawing.Size(799, 259)
         Me.Controls.Add(Me.TabControl1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(815, 307)
-        Me.MinimumSize = New System.Drawing.Size(815, 307)
+        Me.MaximumSize = New System.Drawing.Size(815, 298)
+        Me.MinimumSize = New System.Drawing.Size(815, 298)
         Me.Name = "Form2"
         Me.Text = "Neo ytdlp"
         Me.TabPage2.ResumeLayout(False)
@@ -468,6 +532,8 @@ Partial Class Form2
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.TabControl1.ResumeLayout(False)
+        Me.TabPage3.ResumeLayout(False)
+        Me.TabPage3.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -498,9 +564,7 @@ Partial Class Form2
     Friend WithEvents RichTextBox1 As Windows.Forms.RichTextBox
     Friend WithEvents Button7 As Windows.Forms.Button
     Friend WithEvents Label8 As Windows.Forms.Label
-    Friend WithEvents Button8 As Windows.Forms.Button
     Friend WithEvents ComboBox3 As Windows.Forms.ComboBox
-    Friend WithEvents Label9 As Windows.Forms.Label
     Friend WithEvents GroupBox1 As Windows.Forms.GroupBox
     Friend WithEvents Label11 As Windows.Forms.Label
     Friend WithEvents Label10 As Windows.Forms.Label
@@ -509,4 +573,11 @@ Partial Class Form2
     Friend WithEvents LinkLabel1 As Windows.Forms.LinkLabel
     Friend WithEvents Label12 As Windows.Forms.Label
     Friend WithEvents Label13 As Windows.Forms.Label
+    Friend WithEvents CheckBox2 As Windows.Forms.CheckBox
+    Friend WithEvents CheckBox1 As Windows.Forms.CheckBox
+    Friend WithEvents Label9 As Windows.Forms.Label
+    Friend WithEvents TabPage3 As Windows.Forms.TabPage
+    Friend WithEvents ComboBox4 As Windows.Forms.ComboBox
+    Friend WithEvents Label14 As Windows.Forms.Label
+    Friend WithEvents CheckBox3 As Windows.Forms.CheckBox
 End Class
