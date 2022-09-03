@@ -20,10 +20,6 @@ Public Class Form2
             CheckBox3.Checked = Boolean.Parse(If(Not xmlDoc.DocumentElement.SelectSingleNode("options/hidetab") Is Nothing, xmlDoc.DocumentElement.SelectSingleNode("options/hidetab").InnerText, ""))
         End If
     End Sub
-    Public Class SampleClass
-        Public Number As Integer
-        Public Message As String
-    End Class
     Private Sub Form2_FormClosing(sender As Object, e As EventArgs) Handles MyBase.FormClosing
         Dim sw As New StreamWriter("option.xml", False,
         Encoding.GetEncoding("utf-8"))
